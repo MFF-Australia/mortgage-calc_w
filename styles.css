@@ -1,0 +1,82 @@
+body {
+    font-family: Aptos, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #238870;
+
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: white;
+}
+
+h1 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: white;
+}
+
+input {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin: 0 5px;
+
+}
+
+
+.button-group {
+    grid-column: span 2;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+button {
+    width: calc(100% - 10px);
+    padding: 10px;
+    background-color: #03a678;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+#paymentAmount,
+#totalInterest {
+    background-color: #e0f2f1;
+    border: none;
+    color: #00695c;
+
+}

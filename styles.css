@@ -9,11 +9,12 @@ body {
 }
 
 .container {
-    background: #238870;
-
+    background: linear-gradient(145deg, #3cbcdb, #60efe8);
+    /* 3D gradient */
     padding: 40px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2), -5px -5px 15px rgba(255, 255, 255, 0.1);
+    /* 3D shadow */
     text-align: left;
     color: white;
 }
@@ -21,6 +22,8 @@ body {
 h1 {
     color: white;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    /* Text shadow for 3D effect */
 }
 
 .calculator {
@@ -37,6 +40,8 @@ h1 {
 label {
     margin-bottom: 5px;
     color: white;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    /* Text shadow for 3D effect */
 }
 
 input {
@@ -46,9 +51,9 @@ input {
     border: 1px solid #ccc;
     border-radius: 4px;
     margin: 0 5px;
-
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1), inset -3px -3px 5px rgba(255, 255, 255, 0.1);
+    /* Inner shadow for 3D effect */
 }
-
 
 .button-group {
     grid-column: span 2;
@@ -60,23 +65,34 @@ input {
 button {
     width: calc(100% - 10px);
     padding: 10px;
-    background-color: #03a678;
+    background: linear-gradient(145deg, #3cbed8, #60efe8);
+    /* 3D gradient */
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
     margin-top: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2), -3px -3px 8px rgba(255, 255, 255, 0.1);
+    /* 3D shadow */
+    transition: transform 0.3s ease;
 }
 
 button:hover {
-    background-color: #004d40;
+    background: linear-gradient(145deg, #60efe8, #3cbed8);
+    /* Gradient reverse for hover effect */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3), -2px -2px 5px rgba(255, 255, 255, 0.2);
+    /* Stronger shadow on hover */
+    transform: translateY(-3px);
+    /* Lift button on hover */
 }
 
 #paymentAmount,
 #totalInterest {
-    background-color: #e0f2f1;
+    background-color: #e0f7fa;
+    /* Light blue background */
     border: none;
     color: #00695c;
-
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.1), inset -3px -3px 5px rgba(255, 255, 255, 0.1);
+    /* Inner shadow for 3D effect */
 }
